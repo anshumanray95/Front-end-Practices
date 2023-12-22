@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+		<script>
+		$(document).ready(function()
+		{
+			$("#btn_child_c").click(function()
+			{
+			$(this).parent().css("background-color","blue");
+			});
+			$("#btn_child_c").click(function()
+			{
+			$(".childC").parents().css("background-color","aqua");
+			});
+			$("#btn_child_d").click(function()
+			{
+			$(".childD").parentsUntil(".grand_parents").css("background-color","aqua");
+			});
+			$("#btn_child_c2").click(function()
+			{
+			$(".grand_parents").children().css("background-color","aqua");
+			});
+			$("#btn_child_d2").click(function()
+			{
+			$(".parents").children(".child").css("background-color","aqua");
+			});
+			$("#btn_child_d2").click(function()
+			{
+			$(".grand_parents").find(".childC").css("background-color","aqua");
+			});
+			$("#btn_child_d2").click(function()
+			{
+			$(".parents").find().css("background-color","aqua");
+			});
+			
+		});
+		</script>
+	</head>
+	<body>
+		<div style="background-color: lightpink; padding: 50px" class="great_grand_parents">
+			great grandparents
+			<div style="background-color: lightgreen; padding: 50px" class="grand_parents">
+				grandparents
+				<div style="background-color: lightblue; padding: 50px" class="parents">
+					parents
+					<ul class="child">
+						<li style="background-color: lightyellow" class="childA">A</li>
+						<li style="background-color: lightyellow" class="childB">B</li>
+						<li style="background-color: lightyellow" class="childC">C <button id="btn_child_c">BUTTON</button> <button id="btn_child_c2">BUTTON</button></li>
+						<li style="background-color: lightyellow" class="childD">D <button id="btn_child_d">BUTTON</button> <button id="btn_child_d	2">BUTTON</button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

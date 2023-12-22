@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+			
+		<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+		<script type="text/javascript">
+			$("document").ready(function()
+			{
+				$("#b1").click(function()
+				{
+					$(".d1").css("background-color","red",function()
+					{
+						alert($(".d1").css("background-color"));
+					});
+				});
+					 $("#span1").parent().css("border", "1px solid blue");
+					 $("#span1").parents().css("border", "1px solid blue");
+					 $("#span1").parentsUntil(".div1").css("border", "1px solid red");
+					 $(".div1").children().css("color","red");
+					 $("div").eq(2).css("background-color","lightgreen");
+					 $(".div5").find("span").css("background-color","green");
+					 $("span").siblings().css("background-color","red");
+					 $("h1").click(function()
+					 {
+						alert("the heading 1 size is: " +  $("h1").css("font-size"));
+					 });
+					 
+						
+							$("table tr th:odd").css("background-color","green");
+			});
+		</script>
+		<style>
+			.d1
+			{
+				height:50px;
+				width:50px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="d1">
+		</div>
+		<button id="b1">BUTTON
+		</button>
+		<div class="div1" class=“outermost”>
+ 			<div style=“width:400px;”>div (great-grandparent)
+ 				<ol>ol (grandparent) 
+ 				<li>li (direct parent)
+ 					<span id="span1">span</span>
+ 					</li>
+ 					</ol> 
+			</div>
+ 			<div class="div1" style=“width:400px;”>div (grandparent) 
+ 				<p>p (direct parent)
+				<span id="span1">span</span>
+ 				</p> 
+ 			</div>
+		</div>
+		<div style=“border: 3px solid blue;”>
+		<p>This is the first paragraph in this div.</p>
+		<p>This is the second paragraph in this div.</p>
+		</div>
+		<br>
+		<div style=“border: 3px solid blue;”>
+			<p>This is the first paragraph in this div.</p>
+	 		<p>This is the second paragraph in this div.</p>
+		</div>
+		<br>
+		<div style=“border: 3px solid blue;”>
+			<p>This is the first paragraph in this div.</p>
+ 			<p>This is the second paragraph in this div.</p>
+		</div>
+		<div>
+		
+		<h1>HEADING 1</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Marks</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>A</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>B</td>
+					<td>40</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="div1">
+			<div class="div2">
+				This is a div
+				<div class="div4">
+					This is a div
+				</div>
+			</div>
+			<div class="div3">
+				This is a div
+			</div>
+		</div>
+		<div class="div5">
+			<span>
+				Paragraph 1
+			</span>
+			<div>	
+				Paragraph 2
+			</div>
+		</div>
+	</body>
+</html>

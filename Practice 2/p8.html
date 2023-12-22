@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<title>Form</title>
+<style>
+input[type=submit]:hover
+{
+background-color: blue;
+}
+input[type=text]
+{
+width: 400px;
+border: 2px solid black;
+border-radius: 100px;
+padding: 10px;
+margin: 2px;
+display: inline-block;
+}
+input[type=submit]
+{
+border:5px solid black;
+}
+form
+{
+
+}
+</style>
+</head>
+<body>
+<h1>Student Registration Form</h1>
+<form>
+<label>Student Name</label><input type="text" placeholder="Name">
+<br>
+<label>Class: </label><input type="text"><label>Branch: </label><input type="text"><label>Year: </label><input type="text">
+<br>
+<label>Reg No: </label><input type="text">
+<br>
+<label>Specialization:</label>
+<select name="specialization">
+<option>N/A</option>
+<option value="AI">AI</option>
+<option value="ML">ML</option>
+<option value="DS">DS</option>
+<option value="IOT">IOT</option>
+</select>
+<br>
+<label>Mobile No </label><input type="number">
+<br>
+<label>Gender: </label>
+<input type="radio" value="boy" name="gender"><label>Boy</label>
+<input type="radio" value="girl" name="gender"><label>Girl</label>
+<br>
+<label>Subjects: </label>
+<br>
+<ul style="list-style-type:none; padding: 0px">
+<li><input type="checkbox" name="subjects"><label>CSW</label></li>
+<li><input type="checkbox" name="subjects"><label>DLD</label></li>
+<li><input type="checkbox" name="subjects"><label>AD-1</label></li>
+<li><input type="checkbox" name="subjects"><label>PS</label></li>
+<li><input type="checkbox" name="subjects"><label>PME</label></li>
+</ul>
+<button>Confirm</button>
+</form>
+<br>
+</body>
+</html>

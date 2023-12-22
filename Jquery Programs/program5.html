@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+			
+		<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+		<script type="text/javascript">
+			$("document").ready(function()
+			{
+				$("#b1").click(function()
+				{
+					$(".d1").css("color","green");
+					$(".d1").fadeOut(1000);
+					$(".d1").fadeIn(1000);
+				});
+				$("#b2").click(function()
+				{
+					$(".d2").css("color","green").fadeOut(1000).fadeIn(1000);
+				});
+				$("#b3").click(function()
+				{
+					$(".d3").animate({left:"250px"},"slow").animate({top:"250px"},"slow").animate({left:"0px"},"slow").animate({top:"0px"},"slow");
+				});
+				$("#b4").click(function()
+				{
+					$(".d4").hide(1000,function(){
+						alert("This is an alert messsage");
+					});
+				});
+				$(".d5").click(function()
+				{
+					$(this).hide(1000,function(){
+						alert("This is an alert messsage");
+					});
+				});
+			});
+		</script>
+		<style>
+			.d3
+			{
+				position:relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="d1">
+			<h1>Without Chaining</h1>
+			<p>This is a paragraph</p>
+		</div>
+		<button id="b1">WitH Chaining</button>
+		<div class="d2">
+			<h1> Chaining</h1>
+			<p>This is a paragraph</p>
+		</div>
+		<button id="b2">With Chaining</button>
+		<div class="d3">
+			<h1>Animation with Chaining</h1>
+			<p>This is a paragraph</p>
+		</div>
+		<button id="b3">animation</button>
+		<div class="d4">
+			<h1>Call back</h1>
+			<p>This is a paragraph</p>
+		</div>
+		<button id="b4">call back</button>
+		<div class="d5">
+			<h1>Call back</h1>
+			<p>This is a paragraph</p>
+		</div>
+	</body>
+</html>

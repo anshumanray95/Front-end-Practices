@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/cjs/popper.min.js"></script>	
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<title>MyEShop</title>
+		<script>
+			$(document).ready(function()
+			{
+				windows.onbeforeunload(function()
+				{
+					alert("Do you wish to leave?");
+				});
+				$("#b1").click(function()
+				{
+					alert("Search Button is clicked, You have searched for "  + $("#searchvalue").val() + " in category " + $("#category").val());
+				});
+			});
+		</script>
+	</head>
+	<body class="alert-primary">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+				<center>
+				<h1>Welcome to MyEShop</h1>
+				<br><br>
+				<h6>Buy any product you like at a reasonable price</h6>
+				</center>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<center>
+					<br><br>
+					<form>
+					<input type="text" placeholder="Search.." id="searchvalue"></input>
+					<select style="width:200px" id="category">
+						<option>All</option>
+						<option>Games</option>
+						<option>Phones</option>
+					</select>
+					<input type="button" value="search" id="b1"></input>
+					<i>[0]Items in your cart </i><button class="bg-danger text-white" style="border:0px; padding: 10px">HOME</button>
+					<a href="special offers.html">Special offers</a>
+					<a href="contacts.html">Contact</a>
+					<a href="">Login</a>
+					</form>
+					</center>
+				</div>
+			</div>
+		</div>
+	</body>
+</htmL>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+	<head>
+			
+		<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+		<script type="text/javascript">
+			$("document").ready(function()
+			{
+				$("#btn1").click(function()
+				{
+					$("#d1").hide("slow");
+					$("#btn1").text("Show");
+				});
+				$("#btn1").dblclick(function()
+				{
+					$("#d1").show("fast");
+					$("#btn1").text("Hide");
+				});
+				$("#btn2").click(function()
+				{
+					$("#d1").show("fast");
+					$("#btn1").text(1000);
+				});
+				$("#btn3").click(function()
+				{
+					$("#d2").toggle(500);
+				});
+				$("#c1").click(function()
+				{
+					$("#o1").fadeIn(1000);
+					$("#o2").fadeIn(2000);
+					$("#o3").fadeIn(4000);
+					$("#c1").text("Fade Out");
+				});
+				$("#c1").dblclick(function()
+				{
+					$("#o1").fadeOut(1000);
+					$("#o2").fadeOut(2000); 
+					$("#o3").fadeOut(4000);
+					$("#c1").text("Fade In");
+				});
+				$("#slidedown").click(function()
+				{
+					$("#a1").slideDown(1200);
+					$("#a2").slideDown(900);
+					$("#a3").slideDown(600);
+				});
+				$("#slideup").click(function()
+				{
+					$("#a1").slideUp(1200);
+					$("#a2").slideUp(900);
+					$("#a3").slideUp(600);
+				});
+				$("#slidetoggle").click(function()
+				{
+					$("#a1").slideToggle("fast");
+					$("#a2").slideToggle("fast");
+					$("#a3").slideToggle("fast");
+				});
+			});
+		</script>
+		<style>
+			#d1
+			{
+				background-color: red;
+				width: 100px;
+				height: 100px;
+				border-radius: 50px;
+			}
+			#d2
+			{
+				background-color: red;
+				width: 100px;
+				height: 100px;
+				display:none;
+			}
+			#o1, #o2, #o3
+			{
+				background-color: blue;
+				width: 100px;
+				height: 100px;
+				display:none;
+			}
+			#a1, #a2, #a3
+			{
+				background-color: blue;
+				width: 100px;
+				height: 100px;
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+		</div>
+		<button id="btn1">Hide</button>
+		<button id="btn2">Show</button>
+		<br>
+		<div id="d2">
+		</div>
+		<button id="btn3">Toggle Show/Hide</button>
+		<br><br>
+		<button id="c1">Fade In</button>
+		<div id="o1" style="background-color: orange">
+		</div>
+		<br>
+		<div id="o2" style="background-color: aqua">
+		</div>
+		<br>
+		<div id="o3" style="background-color: lightgreen">
+		</div>
+		<hr>
+		<button id="slidedown">Slide Down</button>
+		<button id="slideup">Slide Up</button>
+		<button id="slidetoggle">Slide Up/Slide Down</button>
+		<br>
+		<div id="a1" style="background-color: orange">
+		</div>
+		<br>
+		<div id="a2" style="background-color: aqua">
+		</div>
+		<br>
+		<div id="a3" style="background-color: lightgreen">
+		</div>
+	</body>
+</html>

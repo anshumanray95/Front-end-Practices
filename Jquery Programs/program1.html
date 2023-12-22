@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title></title>
+		<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+		</script>
+		<script>
+			$(document).ready(function()
+			{
+				$("#b1").click(function()
+				{
+					$(".p1").hide();
+				});
+				$("#b2").click(function()
+				{
+					$(".p2").hide();
+				});
+				$("#b2").dblclick(function()
+				{
+					$(".p2").show();
+				});
+				$("#b3").click(function()
+				{
+					$(".p3").hide();
+				});
+				$("#b4").click(function()
+				{
+					$(".p4").hide();
+				});
+				$("#b5").click(function()
+				{
+					$("#p5").hide();
+				});
+				$(".dv1").mouseenter(function()
+				{
+					$(".dv1").css("background-color: yellow");	
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Hello</h1>
+		<p class="p1"> Jquery with class paragraph</p>
+		<button id="b1">Hello</button>
+		<hr>
+		<h1>Hello</h1>
+		<p class="p2">
+			Jquery with class paragraph
+		</p>
+		<button id="b2">
+			BUTTON
+		</button>
+		<hr>
+		<h1>Hello</h1>
+		<p class="p3"> Jquery with class paragraph</p>
+		<button id="b3">Hello</button>
+		<hr>
+		<h1>Hello</h1>
+		<p class="p4">
+			Jquery with class paragraph
+		</p>
+		<button id="b4">
+			BUTTON
+		</button>
+		<hr>
+		<h1>Hello</h1>
+		<p id="p5">
+			Jquery with id paragraph
+		</p>
+		<button id="b5">
+			BUTTON
+		</button>
+		<div class="dv1">
+			<hr>
+			<h1>MOUSE ENTER</h1>
+			Jquery with id paragraph
+			<img src="image.jpg">
+		</div>
+	</body>
+</html>

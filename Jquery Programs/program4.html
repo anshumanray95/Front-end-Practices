@@ -1,0 +1,109 @@
+<html>
+<head>
+		<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				$("#right").click(function()
+				{
+				$("#d1").animate({left:"250px"},1000);
+				});
+				$("#left").click(function()
+				{
+				$("#d1").animate({left:"0px"},1000);
+				});
+				$("#bottom").click(function()
+				{
+				$("#d1").animate({top:"250px"},"fast");
+				});
+				$("#top").click(function()
+				{
+				$("#d1").animate({top:"0px"},"slow");
+				});
+				$("#anim").click(function()
+				{
+				$("#d2").animate({left:'250px',
+									top:'250px'
+									});
+				$("#d2").animate({left:'0px',
+									top:'0px'
+									});
+				});
+				$("#anim2").click(function()
+				{
+				$("#d3").animate({left:'250px', opacity:'0.1', height: '80px', width: '80px'});
+				});
+				$("#anim3").click(function()
+				{
+				$("#d3").animate({left:'0px', opacity:'1', height: '100px', width: '100px'});
+				});
+				$("#anim4").click(function()
+				{
+				$("#d4").animate({left:'250px', opacity:'0.7', height: '80px'},1000);
+				$("#d4").animate({top:'250px', opacity:'1', height: '100px'},2000);
+				$("#d4").animate({left:'0px', opacity:'0.7', height: '80px'},"slow");
+				$("#d4").animate({top:'0px', opacity:'1.0', height: '100px'},"fast");
+				$("#d4").animate({fontSize:'80px'},3000);
+				});
+			});
+		</script>
+		<style>
+			#d1
+			{
+				height: 100px;
+				width: 100px;
+				background-color: green;
+				position: relative;
+			}
+			#d2
+			{
+				height: 100px;
+				width: 100px;
+				background-color: red;
+				position: relative;
+			}
+			#d3
+			{
+				height: 100px;
+				width: 100px;
+				background-color: blue;
+				position: relative;
+			}
+			#d4
+			{
+				height: 100px;
+				width: 100px;
+				background-color: blue;
+				border-radius: 50px;
+				position: relative;
+			}
+		</style>
+</head>
+<body>
+	<div id = "d1">
+	</div>
+	<button id="left">left
+	</button>
+	<button id="right">right
+	</button>
+	<button id="top">top
+	</button>
+	<button id="bottom">bottom
+	</button>
+	<div id = "d2">
+	</div>
+	<button id="anim">animate
+	</button>
+	<div id = "d3">
+	</div>
+	<button id="anim2">animate
+	</button>
+	<button id="anim3">animate
+	</button>
+	<div id = "d4">
+		ABC
+	</div>
+	<button id="anim4">animate
+	</button>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<title></title>
+		<style>
+			#d1
+			{
+				background-color: green;
+				width: 100;
+				height: 100;
+				border-radius: 0px;
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+		</script>
+		<script>
+			$(document).ready(function()
+			{
+				
+				$(".dv1").mouseenter(function()
+				{
+					$(".dv1").css("background-color", "yellow");
+					$(".dv1").css("color", "white");
+				$(".dv1").css("font-size", "200%");
+				});
+				$(".dv1").mouseleave(function()
+				{
+					$(".dv1").css("background-color", "white");
+					$(".dv1").css("color", "black");
+					$(".dv1").css("font-size", "100%");
+				});
+				$(".dv1").hover(function()
+				{
+					$(this).css("background-color", "blue");
+					$(".dv1").css("color", "black");
+					$(".dv1").css("font-size", "100%");
+				});
+				$(".dv2").hover(function()
+				{
+					$("p:first").css("background-color", "red");
+					$("p:last").css("background-color", "blue");
+				});
+				$(".dv3").ready(function()
+				{
+					$("tr:odd").css("background-color", "red");
+					$("tr:even").css("background-color", "blue");
+				});
+				$("#b1").click(function()
+				{	
+					$("#p1").text("button is clicked");
+				});
+				$("#b2").click(function()
+				{	
+					$("#p2").text("button is clicked");
+				});
+				$("#b3").click(function()
+				{	
+					$("#p3").val("The input is changed");
+				});
+				$("#b4").click(function()
+				{	
+					$("#p4").attr("align","center");
+				});
+				$("#b5").click(function()
+				{	
+					$("#d1").css("border-radius","50px");
+				});
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div class="dv1">
+			<hr>
+			<h1>MOUSE ENTER</h1>
+			Jquery with id paragraph
+			<img src="image.jpg">
+		</div>
+		<div class="dv2">
+			<p> Paragraph 1 </p>
+			<p> Paragraph 2 </p>
+			<p> Paragraph 3 </p>
+		</div>
+		<div class="dv3">
+			<table>
+				<tr>
+					<td>first</td>
+					<td>second</td>
+				</tr>	
+				<tr>
+					<td>first</td>
+					<td>second</td>
+				</tr>
+				<tr>
+					<td>first</td>
+					<td>second</td>
+				</tr>
+				<tr>
+					<td>first</td>
+					<td>second</td>
+				</tr>
+				<tr>
+					<td>first</td>
+					<td>second</td>
+				</tr>
+				<tr>
+					<td>first</td>
+					<td>second</td>
+				</tr>
+			</table>
+		</div>
+		<div class="dv4">
+			<p id="p1">
+				This is paragraph 1
+				<button id="b1">button</button>
+			</p>
+			<p id="p2">
+				This is paragraph 2
+				<button id="b2">button</button>
+			</p>
+			<p>
+				<input id="p3" type="input" value="This is input">
+				<button id="b3">button</button>
+			</p>
+			<p id="p4">
+				This is paragraph 4
+				<button id="b4">button</button>
+			</p>
+			<p id="p5">
+				<div id="d1">
+				</div>
+				<button id="b5">button</button>
+			</p>
+
+		</div>
+	</body>
+</html>
