@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<title>Form</title>
+<style>
+input[type=submit]:hover
+{
+background-color: blue;
+}
+input[type=text]
+{
+width: 400px;
+border: 2px solid black;
+border-radius: 100px;
+padding: 10px;
+margin: 2px;
+display: inline-block;
+}
+input[type=submit]
+{
+border:5px solid black;
+}
+form
+{
+background-color:yellow;
+}
+</style>
+</head>
+<body>
+<form>
+<label>Name: </label>
+<input type="text">
+<br>
+<label>email-id: </label>
+<input type="email">
+<br>
+<label>Password: </label>
+<input type="password">
+<br>
+<label>Gender: </label>
+<input type="radio" value="Male" name="gender"><label>Male</label>
+<input type="radio" value="Female" name="gender"><label>Female</label>
+<br>
+<input type="checkbox"><label>Check all the necessary Details you have enerted</label>
+<br><br>
+<button>SUBMIT</button>
+</form>
+<hr>
+<h1>Student Registration Form</h1>
+<form>
+<label>Student Name</label><input type="text" placeholder="Name">
+<br>
+<label>Class: </label><input type="text"><label>Branch: </label><input type="text"><label>Year: </label><input type="text">
+<br>
+<label>Reg No: </label><input type="text">
+<br>
+<label>Specialization:</label>
+<select name="specialization">
+<option>N/A</option>
+<option value="AI">AI</option>
+<option value="ML">ML</option>
+<option value="DS">DS</option>
+<option value="IOT">IOT</option>
+</select>
+<br>
+<label>Mobile No </label><input type="number">
+<br>
+<label>Gender: </label>
+<input type="radio" value="boy" name="gender"><label>Boy</label>
+<input type="radio" value="girl" name="gender"><label>Girl</label>
+<br>
+<label>Subjects: </label>
+<br>
+<ul style="list-style-type:none; padding: 0px">
+<li><input type="checkbox" name="subjects"><label>CSW</label></li>
+<li><input type="checkbox" name="subjects"><label>DLD</label></li>
+<li><input type="checkbox" name="subjects"><label>AD-1</label></li>
+<li><input type="checkbox" name="subjects"><label>PS</label></li>
+<li><input type="checkbox" name="subjects"><label>PME</label></li>
+</ul>
+<button>Confirm</button>
+</form>
+<br>
+<hr>
+<form action="feedback.html" method="post">
+<h1>Feeedback Form</h1>
+<label>Salutation:</label>
+<select name="salutation">
+<option>N/A</option>
+<option value="MS">Ms</option>
+<option value="MRS">Mrs</option>
+<option value="MR">MR</option>
+</select><br>
+<label>First Name: </label><input type="text" value="first_name" placeholder="First Name"><BR>
+<label>Last Name: </label><input type="text" placeholder="Last Name"><BR>
+<label>Mobile No: </label><input type="number" placeholder="Mobile No." value="number"><BR>
+<label>Date of Birth: </label><input type="date" value="DOB"><BR>
+<label>Address: </label>
+<textarea col=30 row=5>
+</textarea><br>
+<label>Where you came to know about us:</label>
+<select name="socialmedia">
+<option>N/A</option>
+<option value="fb">FB</option>
+<option value="insta">INSTA</option>
+<option value="google">GOOGLE</option>
+</select><br>
+<label>Do you like our service: </label>
+<input type="radio" name="feedback" value="YES"><label>Yes</label>
+<input type="radio" name="feedback" value="NO"><label>No</label>
+<br>
+<br>
+<label>What are the things we can improve on: </label>
+<ul style="list-style-type:none; padding: 0px">
+<li><input type="checkbox" name="feed"><label>taste of food/quaity</label></li>
+<li><input type="checkbox" name="feed"><label>delivery</label></li>
+<li><input type="checkbox" name="feed"><label>service</label></li>
+<li><input type="checkbox" name="feed"><label>Quantity</label></li>
+</ul>
+<label>Write your experience: </label>
+<textarea col=30 row=5>
+</textarea><br>
+<input type="submit" value="SUBMIT">
+</form>
+</body>
+</html>

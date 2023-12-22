@@ -1,0 +1,15 @@
+.navbar-brand img {
+    filter: brightness(100%);
+  }
+.navbar-brand {
+    background-image: url('Resources/Logo/logo.png');
+    background-color: --bs-tertiary-bg;
+    mix-blend-mode: multiply;
+}
+.carousel-button{
+position:relative;
+bottom:auto;
+left:50%;
+transform: translateX(-50%);
+align-self: center;
+}

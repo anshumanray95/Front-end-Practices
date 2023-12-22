@@ -1,0 +1,22 @@
+.headline1
+{
+color:darkblue;
+font-family:verdana;
+font-size: 16px;
+}
+.headline2
+{
+font-size:14px;
+}
+.headline
+{
+text-align:center;
+}
+.blueline
+{
+color:blue;
+}
+table
+{
+border-collapse:collapse;
+}
